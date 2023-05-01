@@ -21,4 +21,4 @@
 
 Add package from npm
 
-`npm install @loicK/my-custom-dropdown`
+`npm install custom-dropdown-ocproject14`
