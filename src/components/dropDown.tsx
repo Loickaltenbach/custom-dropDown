@@ -1,6 +1,6 @@
 import * as React from 'react';
 import '../styles/dropdown.css';
-import arrow from "../assets/arrow.svg";
+import arrow from '../assets/arrow.svg';
 
 type MenuItem = {
   label: string;
