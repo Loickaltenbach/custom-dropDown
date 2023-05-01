@@ -1,5 +1,5 @@
 /// <reference types="react" />
-import "../style/dropdown.css";
+import '../style/dropdown.css';
 type MenuItem = {
     label: string;
     value: string;

@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from "react";
-import "../style/dropdown.css";
+import * as React from 'react';
+import '../style/dropdown.css';
 import arrow from "../assets/arrow.svg";
 
 type MenuItem = {
@@ -16,12 +16,8 @@ type DropdownProps = {
   onSelect: (item: MenuItem) => void;
 };
 
-const Dropdown= (props: DropdownProps) => {
-  const [isOpen, setIsOpen] = useState<boolean>(false);
-
-  useEffect(() => {
-    console.log('', props.items);
-  }, []);
+const Dropdown = (props: DropdownProps) => {
+  const [isOpen, setIsOpen] = React.useState<boolean>(false);
 
   const handleItemClick = (item: MenuItem) => {
     props.setSelectedItem(item);
@@ -32,7 +28,7 @@ const Dropdown= (props: DropdownProps) => {
   const toggleOpen = () => setIsOpen(!isOpen);
 
   return (
-    <div className="dropdown" style={{ cursor: "pointer" }}>
+    <div className="dropdown" style={{ cursor: 'pointer' }}>
       <p>{props.title}</p>
       <div className="dropdown-toggle" onClick={toggleOpen}>
         {props.selectedItem ? props.selectedItem.label : props.defaultLabel}
