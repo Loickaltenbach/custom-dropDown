@@ -1,5 +1,5 @@
 import * as React from 'react';
-import '../style/dropdown.css';
+import '../styles/dropdown.css';
 import arrow from "../assets/arrow.svg";
 
 type MenuItem = {

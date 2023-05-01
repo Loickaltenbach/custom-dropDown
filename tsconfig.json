@@ -8,6 +8,6 @@
     "strict": true
   },
   "allowSyntheticDefaultImports": true,
-  "include": ["src/**/*"],
+  "include": ["src/components", "custom.d.ts"],
   "exclude": ["node_modules", "**/__tests__/*"]
 }

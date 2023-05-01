@@ -4,7 +4,7 @@
 
 import * as React from 'react';
 import { render, fireEvent } from '@testing-library/react';
-import Dropdown from '../src/components/dropdown';
+import Dropdown from '../src/components/dropDown';
 
 describe('Dropdown component', () => {
   const title = 'Dropdown Title';
