@@ -1,7 +1,6 @@
-const React = require("react");
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import "../style/dropdown.css";
-const arrow = require("../assets/arrow.svg");
+import arrow from "../assets/arrow.svg";
 
 type MenuItem = {
   label: string;
